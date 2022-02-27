@@ -15,6 +15,7 @@ export default function Index() {
           display: 'grid',
           placeItems: 'center',
           height: '60vh',
+          padding: '16px',
         }}
       >
         <div>
