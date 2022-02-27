@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { RoughNotation } from 'react-rough-notation';
+
 interface Props {
   text: string;
   href: string;
@@ -5,14 +8,16 @@ interface Props {
 
 function ExternalLink({ text, href }: Props) {
   return (
-    <a
-      style={{ color: '#6A34F9' }}
-      href={href}
-      target="_blank"
-      rel="noreferrer"
-    >
-      <b>{text}</b>
-    </a>
+    <RoughNotation type="underline" color="#6A34F9" strokeWidth={4}>
+      <a
+        style={{ color: '#6A34F9', textDecoration: 'none' }}
+        href={href}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <b>{text}</b>
+      </a>
+    </RoughNotation>
   );
 }
 
