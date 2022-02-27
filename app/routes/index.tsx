@@ -4,7 +4,8 @@ export default function Index() {
   return (
     <div
       style={{
-        fontFamily: 'system-ui, sans-serif',
+        fontFamily: 'Comic Sans MS, sans-serif',
+        fontSize: '24px',
         backgroundColor: '#eaeaea',
         height: '100vh',
       }}
@@ -19,23 +20,21 @@ export default function Index() {
         }}
       >
         <div>
-          <h1
-            style={{ color: '#6A34F9', width: '50vw' }}
-          >{`hi, i'm john gamboa.`}</h1>
+          <h1 style={{ color: '#6A34F9' }}>{`hi, i'm john gamboa.`}</h1>
           <p>
             <span>senior front end engineer @ </span>
             <ExternalLink text="HubSpot" href="https://www.hubspot.com" />
-            <span>. currently working on </span>
+            <span>. </span>
+          </p>
+          <p>
+            <span>currently working on </span>
             <ExternalLink
               text="Forecast"
               href="https://www.hubspot.com/products/forecasting"
             />
-            <span>.</span>
-          </p>
-          <p>
             <span>
-              previously worked on Meetings, Goals, Sequences, Documents,
-              Templates, and Snippets.
+              . previously worked on Meetings, Sequences, Playbooks, Goals,
+              Documents, Templates, and Snippets.
             </span>
           </p>
           <p>
