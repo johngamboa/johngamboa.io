@@ -22,9 +22,9 @@ export default function Index() {
             style={{ color: '#6A34F9', width: '50vw' }}
           >{`hi, i'm john gamboa.`}</h1>
           <p>
-            <span>
-              senior front end engineer @ HubSpot. currently working on{' '}
-            </span>
+            <span>senior front end engineer @ </span>
+            <ExternalLink text="HubSpot" href="https://www.hubspot.com" />
+            <span>. currently working on</span>
             <ExternalLink
               text="Forecast"
               href="https://www.hubspot.com/products/forecasting"
