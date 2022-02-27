@@ -24,7 +24,7 @@ export default function Index() {
           <p>
             <span>senior front end engineer @ </span>
             <ExternalLink text="HubSpot" href="https://www.hubspot.com" />
-            <span>. currently working on</span>
+            <span>. currently working on </span>
             <ExternalLink
               text="Forecast"
               href="https://www.hubspot.com/products/forecasting"
