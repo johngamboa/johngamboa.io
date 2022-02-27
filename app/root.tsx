@@ -8,7 +8,7 @@ import {
 } from 'remix';
 import type { MetaFunction } from 'remix';
 
-export const meta: MetaFunction = () => ({ title: 'New Remix App' });
+export const meta: MetaFunction = () => ({ title: 'John Gamboa' });
 
 export default function App() {
   return (
@@ -19,7 +19,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body style={{ margin: '0 !important' }}>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

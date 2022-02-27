@@ -1,35 +1,62 @@
-import { Link } from 'remix';
+import ExternalLink from '../components/ExternalLink';
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-      <h1>Welcome to Remix</h1>
-      <Link to="/posts">Posts</Link>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div
+      style={{
+        fontFamily: 'system-ui, sans-serif',
+        backgroundColor: '#eaeaea',
+        height: '100vh',
+      }}
+    >
+      <div
+        style={{
+          lineHeight: '1.4',
+          display: 'grid',
+          placeItems: 'center',
+          height: '60vh',
+        }}
+      >
+        <div>
+          <h1
+            style={{ color: '#6A34F9', width: '50vw' }}
+          >{`hi, i'm john gamboa.`}</h1>
+          <p>
+            <span>
+              senior front end engineer @ HubSpot. currently working on{' '}
+            </span>
+            <ExternalLink
+              text="Forecast"
+              href="https://www.hubspot.com/products/forecasting"
+            />
+            <span>.</span>
+          </p>
+          <p>
+            <span>
+              previously worked on Meetings, Goals, Sequences, Documents,
+              Templates, and Snippets.
+            </span>
+          </p>
+          <p>
+            <span>check out my </span>
+            <ExternalLink
+              text="LinkedIn"
+              href="https://www.linkedin.com/in/johnhadriangamboa/"
+            />
+            <span>, </span>
+            <ExternalLink
+              text="GitHub"
+              href="https://www.github.com/johngamboa/"
+            />
+            <span>, and </span>
+            <ExternalLink
+              text="resume"
+              href="https://www.dropbox.com/s/0nmd9slvkn52got/John%20Hadrian%20Gamboa%20Resume.pdf"
+            />
+            <span>.</span>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
