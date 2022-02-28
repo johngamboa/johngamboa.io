@@ -29,7 +29,7 @@ export default function App() {
         style={{
           margin: '0 !important',
           fontFamily: 'Gloria Hallelujah, sans-serif',
-          fontSize: '24px',
+          fontSize: '20px',
           backgroundColor: '#fefefe',
         }}
       >

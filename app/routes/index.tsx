@@ -6,15 +6,14 @@ export default function Index() {
   return (
     <div
       style={{
-        paddingTop: '15vh',
-        paddingBottom: '15vh',
+        paddingTop: '10vh',
         paddingLeft: '20vw',
         paddingRight: '20vw',
       }}
     >
-      <h1 style={{ color: '#6A34F9', fontSize: '48px' }}>
+      <h2 style={{ color: '#6A34F9' }}>
         <b>john gamboa</b>
-      </h1>
+      </h2>
       <RoughNotationGroup show>
         <p>
           <b>senior front end engineer</b>
