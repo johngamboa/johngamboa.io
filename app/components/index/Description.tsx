@@ -1,13 +1,12 @@
-import ExternalLink from './ExternalLink';
+import { RoughNotation } from 'react-rough-notation';
+
+import { LIGHT_PURPLE } from '../../constants/colors';
 
 function Description() {
   return (
-    <p>
-      <b>front end engineer</b>
-      <span> @ </span>
-      <ExternalLink text="HubSpot" href="https://www.hubspot.com" />
-      <span>. </span>
-    </p>
+    <RoughNotation type="box" color={LIGHT_PURPLE} strokeWidth={2}>
+      <b>front end engineer @ HubSpot</b>
+    </RoughNotation>
   );
 }
 

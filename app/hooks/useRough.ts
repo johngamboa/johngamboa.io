@@ -5,8 +5,6 @@ import rough from 'roughjs/bin/rough';
 import { PURPLE } from '../constants/colors';
 import { HACHURE, FILL_STYLES } from '../constants/fillStyles';
 
-const DRAW_INTERVAL = 1000;
-
 const MAX_ROUGHNESS = 10;
 const MAX_BOWING = 10;
 const MAX_STROKE_WIDTH = 5;
@@ -14,11 +12,11 @@ const MAX_HACHURE_ANGLE = 90;
 
 const CIRCLE_X = 90;
 const CIRCLE_Y = 90;
-const CIRCE_DIAMETER = 90;
+const CIRCE_DIAMETER = 60;
 
-const RECTANGLE_X = 45;
-const RECTANGLE_Y = 45;
-const RECTANGLE_LENGTH = 90;
+const RECTANGLE_X = 60;
+const RECTANGLE_Y = 60;
+const RECTANGLE_LENGTH = 60;
 
 const MAX_COLORS = 16777215;
 const HEX = 16;
@@ -49,11 +47,7 @@ const useRough = () => {
     );
   };
 
-  useEffect(() => {
-    const interval = setInterval(updateCircle, DRAW_INTERVAL);
-
-    return () => clearInterval(interval);
-  }, []);
+  useEffect(updateCircle, []);
 
   useEffect(() => {
     const canvas = document.getElementById('canvas') as HTMLCanvasElement;
@@ -97,6 +91,10 @@ const useRough = () => {
     simplification,
     hachureAngle,
   ]);
+
+  return {
+    onClick: updateCircle,
+  };
 };
 
 export default useRough;

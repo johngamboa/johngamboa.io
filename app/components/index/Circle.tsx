@@ -4,9 +4,17 @@ const CANVAS_WIDTH = 180;
 const CANVAS_HEIGHT = 180;
 
 function Circle() {
-  useRough();
+  const { onClick } = useRough();
 
-  return <canvas id="canvas" width={CANVAS_WIDTH} height={CANVAS_HEIGHT} />;
+  return (
+    <canvas
+      id="canvas"
+      width={CANVAS_WIDTH}
+      height={CANVAS_HEIGHT}
+      onClick={onClick}
+      style={{ cursor: 'pointer' }}
+    />
+  );
 }
 
 export default Circle;

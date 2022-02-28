@@ -9,7 +9,7 @@ interface Props {
 
 function ExternalLink({ text, href }: Props) {
   return (
-    <RoughNotation type="underline" color={LIGHT_PURPLE} strokeWidth={4}>
+    <RoughNotation type="underline" color={LIGHT_PURPLE} strokeWidth={2}>
       <a
         style={{ color: PURPLE, textDecoration: 'none' }}
         href={href}
