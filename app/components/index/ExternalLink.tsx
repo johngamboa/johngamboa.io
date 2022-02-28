@@ -1,5 +1,7 @@
 import { RoughNotation } from 'react-rough-notation';
 
+import { PURPLE, LIGHT_PURPLE } from '../../constants/colors';
+
 interface Props {
   text: string;
   href: string;
@@ -7,9 +9,9 @@ interface Props {
 
 function ExternalLink({ text, href }: Props) {
   return (
-    <RoughNotation type="underline" color="#6A34F9" strokeWidth={4}>
+    <RoughNotation type="underline" color={LIGHT_PURPLE} strokeWidth={4}>
       <a
-        style={{ color: '#6A34F9', textDecoration: 'none' }}
+        style={{ color: PURPLE, textDecoration: 'none' }}
         href={href}
         target="_blank"
         rel="noreferrer"

@@ -8,7 +8,9 @@ import {
 } from 'remix';
 import type { MetaFunction } from 'remix';
 
-export const meta: MetaFunction = () => ({ title: 'John Gamboa' });
+import { WHITE } from './constants/colors';
+
+export const meta: MetaFunction = () => ({ title: 'johngamboa' });
 
 export default function App() {
   return (
@@ -29,8 +31,8 @@ export default function App() {
         style={{
           margin: '0 !important',
           fontFamily: 'Gloria Hallelujah, sans-serif',
-          fontSize: '20px',
-          backgroundColor: '#fefefe',
+          fontSize: '18px',
+          backgroundColor: WHITE,
         }}
       >
         <Outlet />
