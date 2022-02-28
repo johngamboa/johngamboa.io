@@ -30,7 +30,7 @@ export default function App() {
           margin: '0 !important',
           fontFamily: 'Gloria Hallelujah, sans-serif',
           fontSize: '24px',
-          backgroundColor: '#eaeaea',
+          backgroundColor: '#fefefe',
         }}
       >
         <Outlet />

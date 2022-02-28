@@ -18,10 +18,12 @@
   "dependencies": {
     "@remix-run/cloudflare-workers": "^1.2.2",
     "@remix-run/react": "^1.2.2",
+    "@types/styled-components": "^5.1.23",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-rough-notation": "github:linkstrifer/react-rough-notation",
-    "remix": "^1.2.2"
+    "remix": "^1.2.2",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^2.2.2",
