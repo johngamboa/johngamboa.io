@@ -10,7 +10,7 @@ export default function Index() {
     <RoughNotationGroup show>
       <div
         style={{
-          padding: '10vh 20vw 10vh 20vw',
+          padding: '10vh 10vw 10vh 10vw',
           display: 'flex',
           alignContent: 'center',
           flexDirection: 'row',

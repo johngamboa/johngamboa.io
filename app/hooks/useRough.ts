@@ -5,20 +5,20 @@ import rough from 'roughjs/bin/rough';
 import { PURPLE } from '../constants/colors';
 import { HACHURE, FILL_STYLES } from '../constants/fillStyles';
 
-const DRAW_INTERVAL = 800;
+const DRAW_INTERVAL = 1000;
 
 const MAX_ROUGHNESS = 10;
 const MAX_BOWING = 10;
 const MAX_STROKE_WIDTH = 5;
 const MAX_HACHURE_ANGLE = 90;
 
-const CIRCLE_X = 100;
-const CIRCLE_Y = 100;
-const CIRCE_DIAMETER = 100;
+const CIRCLE_X = 90;
+const CIRCLE_Y = 90;
+const CIRCE_DIAMETER = 90;
 
-const RECTANGLE_X = 50;
-const RECTANGLE_Y = 50;
-const RECTANGLE_LENGTH = 100;
+const RECTANGLE_X = 45;
+const RECTANGLE_Y = 45;
+const RECTANGLE_LENGTH = 90;
 
 const MAX_COLORS = 16777215;
 const HEX = 16;

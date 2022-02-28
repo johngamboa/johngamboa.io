@@ -2,12 +2,11 @@ import { PURPLE } from '../../constants/colors';
 
 function Header() {
   return (
-    <h3>
+    <h2>
       <span>
-        <span>&gt; </span>
-        <b style={{ color: PURPLE }}>johngamboa</b>
+        <b style={{ color: PURPLE }}>john gamboa</b>
       </span>
-    </h3>
+    </h2>
   );
 }
 

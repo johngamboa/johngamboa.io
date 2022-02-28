@@ -10,7 +10,7 @@ import type { MetaFunction } from 'remix';
 
 import { WHITE } from './constants/colors';
 
-export const meta: MetaFunction = () => ({ title: 'johngamboa' });
+export const meta: MetaFunction = () => ({ title: 'john gamboa' });
 
 export default function App() {
   return (
@@ -31,7 +31,7 @@ export default function App() {
         style={{
           margin: '0 !important',
           fontFamily: 'Gloria Hallelujah, sans-serif',
-          fontSize: '18px',
+          fontSize: '16px',
           backgroundColor: WHITE,
         }}
       >
