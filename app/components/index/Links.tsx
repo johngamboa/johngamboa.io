@@ -4,17 +4,17 @@ function Links() {
   return (
     <p>
       <span>check out my </span>
-      <ExternalLink
-        text="LinkedIn"
-        href="https://www.linkedin.com/in/johnhadriangamboa/"
-      />
+      <ExternalLink to="https://www.linkedin.com/in/johnhadriangamboa/">
+        <b>LinkedIn</b>
+      </ExternalLink>
       <span>, </span>
-      <ExternalLink text="GitHub" href="https://www.github.com/johngamboa/" />
+      <ExternalLink to="https://www.github.com/johngamboa/">
+        <b>GitHub</b>
+      </ExternalLink>
       <span>, and </span>
-      <ExternalLink
-        text="résumé"
-        href="https://www.dropbox.com/s/0nmd9slvkn52got/John%20Hadrian%20Gamboa%20Resume.pdf"
-      />
+      <ExternalLink to="https://www.dropbox.com/s/6i9zh2sq9h80hmc/John%20Hadrian%20Gamboa%20Resume.pdf?dl=0">
+        <b>résumé</b>
+      </ExternalLink>
       <span>.</span>
     </p>
   );

@@ -3,20 +3,20 @@ import { RoughNotation } from 'react-rough-notation';
 import { PURPLE, LIGHT_PURPLE } from '../../constants/colors';
 
 interface Props {
-  text: string;
-  href: string;
+  children: any;
+  to: string;
 }
 
-function ExternalLink({ text, href }: Props) {
+function ExternalLink({ children, to }: Props) {
   return (
     <RoughNotation type="underline" color={LIGHT_PURPLE} strokeWidth={2}>
       <a
         style={{ color: PURPLE, textDecoration: 'none' }}
-        href={href}
+        href={to}
         target="_blank"
         rel="noreferrer"
       >
-        <b>{text}</b>
+        {children}
       </a>
     </RoughNotation>
   );

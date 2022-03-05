@@ -37,6 +37,7 @@ export default function App() {
           fontFamily: 'Gloria Hallelujah, sans-serif',
           fontSize: '16px',
           backgroundColor: WHITE,
+          userSelect: 'none',
         }}
       >
         <Outlet />
