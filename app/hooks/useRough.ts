@@ -21,7 +21,7 @@ const RECTANGLE_LENGTH = 60;
 const MAX_COLORS = 16777215;
 const HEX = 16;
 
-const SCALE_FACTOR = 5;
+const SCALE_FACTOR = 2;
 
 const useRough = () => {
   const [seed, setSeed] = useState(1);
