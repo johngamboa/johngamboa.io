@@ -21,6 +21,8 @@ const RECTANGLE_LENGTH = 60;
 const MAX_COLORS = 16777215;
 const HEX = 16;
 
+const SCALE_FACTOR = 5;
+
 const useRough = () => {
   const [seed, setSeed] = useState(1);
   const [roughness, setRoughness] = useState(Math.random() * MAX_ROUGHNESS);
@@ -48,6 +50,19 @@ const useRough = () => {
   };
 
   useEffect(updateCircle, []);
+
+  useEffect(() => {
+    const canvas = document.getElementById('canvas') as HTMLCanvasElement;
+    const context = canvas.getContext('2d') as CanvasRenderingContext2D;
+
+    canvas.style.width = canvas.style.width || `${canvas.width}px`;
+    canvas.style.height = canvas.style.height || `${canvas.height}px`;
+
+    canvas.width = Math.ceil(canvas.width * SCALE_FACTOR);
+    canvas.height = Math.ceil(canvas.height * SCALE_FACTOR);
+
+    context.scale(SCALE_FACTOR, SCALE_FACTOR);
+  }, []);
 
   useEffect(() => {
     const canvas = document.getElementById('canvas') as HTMLCanvasElement;
