@@ -2,10 +2,10 @@ import { RoughNotation } from 'react-rough-notation';
 
 import { PURPLE, LIGHT_PURPLE } from '../../constants/colors';
 
-interface Props {
+type Props = {
   children: any;
   to: string;
-}
+};
 
 function ExternalLink({ children, to }: Props) {
   return (

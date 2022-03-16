@@ -1,7 +1,6 @@
 import useRough from '../../hooks/useRough';
 
-const CANVAS_WIDTH = 180;
-const CANVAS_HEIGHT = 180;
+import { CANVAS_WIDTH, CANVAS_HEIGHT } from '../../constants/canvasConstants';
 
 function Circle() {
   const { onClick } = useRough();
