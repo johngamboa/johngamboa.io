@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 const SCALE_FACTOR = 2;
 
-const useInitializeCanvas = (): void => {
+const useInitializeCanvas = () => {
   useEffect(() => {
     const canvas = document.getElementById('canvas') as HTMLCanvasElement;
     const context = canvas.getContext('2d') as CanvasRenderingContext2D;

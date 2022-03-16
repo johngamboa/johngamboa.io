@@ -13,7 +13,7 @@ import {
   RECTANGLE_LENGTH,
 } from '../constants/shapeConstants';
 
-const useDrawRoughCanvas = (options: Options): void =>
+const useDrawRoughCanvas = (options: Options) =>
   useEffect(() => {
     const canvas = document.getElementById('canvas') as HTMLCanvasElement;
     const context = canvas.getContext('2d') as CanvasRenderingContext2D;
