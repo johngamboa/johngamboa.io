@@ -6,7 +6,7 @@ import { STROKE_WIDTH } from '../../constants/roughNotationConstants';
 function Description() {
   return (
     <RoughNotation type="box" color={LIGHT_PURPLE} strokeWidth={STROKE_WIDTH}>
-      <b>front end engineer @ HubSpot</b>
+      <b>technical lead @ HubSpot</b>
     </RoughNotation>
   );
 }
