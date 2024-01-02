@@ -1,10 +1,10 @@
-import { PURPLE } from '../../constants/colors';
+import { GREY } from '../../constants/colors';
 
 function Header() {
   return (
     <h2>
       <span>
-        <b style={{ color: PURPLE }}>john gamboa</b>
+        <b style={{ color: GREY }}>john gamboa</b>
       </span>
     </h2>
   );
