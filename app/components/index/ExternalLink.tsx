@@ -1,6 +1,6 @@
 import { RoughNotation } from 'react-rough-notation';
 
-import { GREY, LIGHT_GREY } from '../../constants/colors';
+import { useTheme } from '../../context/ThemeContext';
 import { STROKE_WIDTH } from '../../constants/roughNotationConstants';
 
 type Props = {
@@ -9,14 +9,16 @@ type Props = {
 };
 
 function ExternalLink({ children, to }: Props) {
+  const { colors } = useTheme();
+
   return (
     <RoughNotation
       type="underline"
-      color={LIGHT_GREY}
+      color={colors.annotation}
       strokeWidth={STROKE_WIDTH}
     >
       <a
-        style={{ color: GREY, textDecoration: 'none' }}
+        style={{ color: colors.text, textDecoration: 'none' }}
         href={to}
         target="_blank"
         rel="noreferrer"

@@ -4,6 +4,7 @@ import Header from '../components/index/Header';
 import Description from '../components/index/Description';
 import Links from '../components/index/Links';
 import Circle from '../components/index/Circle';
+import ThemeToggle from '../components/index/ThemeToggle';
 
 export default function Index() {
   return (
@@ -26,6 +27,7 @@ export default function Index() {
           <Links />
         </div>
       </div>
+      <ThemeToggle />
     </RoughNotationGroup>
   );
 }
