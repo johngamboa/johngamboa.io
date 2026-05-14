@@ -1,8 +1,11 @@
+import { useTheme } from '../../context/ThemeContext';
 import ExternalLink from './ExternalLink';
 
 function Links() {
+  const { colors } = useTheme();
+
   return (
-    <p>
+    <p style={{ color: colors.text }}>
       <span>check out my </span>
       <ExternalLink to="https://www.linkedin.com/in/johnhadriangamboa/">
         <b>LinkedIn</b>

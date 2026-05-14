@@ -1,10 +1,12 @@
-import { GREY } from '../../constants/colors';
+import { useTheme } from '../../context/ThemeContext';
 
 function Header() {
+  const { colors } = useTheme();
+
   return (
     <h2>
       <span>
-        <b style={{ color: GREY }}>john gamboa</b>
+        <b style={{ color: colors.text }}>john gamboa</b>
       </span>
     </h2>
   );

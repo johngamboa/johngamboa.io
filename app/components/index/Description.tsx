@@ -1,12 +1,20 @@
 import { RoughNotation } from 'react-rough-notation';
 
-import { LIGHT_GREY } from '../../constants/colors';
+import { useTheme } from '../../context/ThemeContext';
 import { STROKE_WIDTH } from '../../constants/roughNotationConstants';
 
 function Description() {
+  const { colors } = useTheme();
+
   return (
-    <RoughNotation type="box" color={LIGHT_GREY} strokeWidth={STROKE_WIDTH}>
-      <b>mission software engineer @ anduril industries</b>
+    <RoughNotation
+      type="box"
+      color={colors.annotation}
+      strokeWidth={STROKE_WIDTH}
+    >
+      <b style={{ color: colors.text }}>
+        mission software engineer @ anduril industries
+      </b>
     </RoughNotation>
   );
 }

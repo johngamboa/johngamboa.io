@@ -1,5 +1,10 @@
+import { ThemeProvider } from './context/ThemeContext';
 import Index from './routes/index';
 
 export default function App() {
-  return <Index />;
+  return (
+    <ThemeProvider>
+      <Index />
+    </ThemeProvider>
+  );
 }
