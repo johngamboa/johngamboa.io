@@ -1,0 +1,60 @@
+diff --git a/node_modules/react-rough-notation/dist/main.js b/node_modules/react-rough-notation/dist/main.js
+index e7668b6..2ca6a66 100644
+--- a/node_modules/react-rough-notation/dist/main.js
++++ b/node_modules/react-rough-notation/dist/main.js
+@@ -81,6 +81,9 @@ function reducer(state, _a) {
+             });
+             return __assign(__assign({}, state), { annotations: __spreadArrays(annotationsToSort.withOrder, annotationsToSort.withoutOrder) });
+         }
++        case 'REMOVE': {
++            return __assign(__assign({}, state), { annotations: state.annotations.filter(function (a) { return a.annotation !== payload.annotation; }) });
++        }
+         default:
+             return state;
+     }
+@@ -118,7 +121,14 @@ var useGroupContext = function (annotation, order) {
+                 payload: { annotation: annotation, order: order },
+             });
+         }
+-        return;
++        return function () {
++            if (dispatch) {
++                dispatch({
++                    type: 'REMOVE',
++                    payload: { annotation: annotation },
++                });
++            }
++        };
+     }, []);
+ };
+ 
+diff --git a/node_modules/react-rough-notation/dist/module.es.js b/node_modules/react-rough-notation/dist/module.es.js
+index d4f2ea8..3996783 100644
+--- a/node_modules/react-rough-notation/dist/module.es.js
++++ b/node_modules/react-rough-notation/dist/module.es.js
+@@ -76,6 +76,9 @@ function reducer(state, _a) {
+             });
+             return __assign(__assign({}, state), { annotations: __spreadArrays(annotationsToSort.withOrder, annotationsToSort.withoutOrder) });
+         }
++        case 'REMOVE': {
++            return __assign(__assign({}, state), { annotations: state.annotations.filter(function (a) { return a.annotation !== payload.annotation; }) });
++        }
+         default:
+             return state;
+     }
+@@ -113,7 +116,14 @@ var useGroupContext = function (annotation, order) {
+                 payload: { annotation: annotation, order: order },
+             });
+         }
+-        return;
++        return function () {
++            if (dispatch) {
++                dispatch({
++                    type: 'REMOVE',
++                    payload: { annotation: annotation },
++                });
++            }
++        };
+     }, []);
+ };
+ 

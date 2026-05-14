@@ -1,37 +1,27 @@
 {
-  "name": "remix-app-template",
+  "name": "johngamboa.io",
   "private": true,
-  "description": "",
-  "license": "",
-  "sideEffects": false,
-  "main": "build/index.js",
+  "type": "module",
   "scripts": {
-    "postinstall": "remix setup cloudflare-workers",
-    "build": "cross-env NODE_ENV=production remix build",
-    "dev:remix": "cross-env NODE_ENV=development remix watch",
-    "dev:miniflare": "cross-env NODE_ENV=development miniflare ./build/index.js --watch",
-    "dev": "cross-env NODE_ENV=development remix build && run-p dev:*",
-    "start": "cross-env NODE_ENV=production miniflare ./build/index.js",
-    "deploy": "npm run build && wrangler publish ./build/index.js",
-    "prepare": "husky install"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "npm run build && wrangler pages deploy dist",
+    "prepare": "husky install",
+    "postinstall": "patch-package"
   },
   "dependencies": {
-    "@remix-run/cloudflare-workers": "^1.2.2",
-    "@remix-run/react": "^1.2.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-rough-notation": "github:linkstrifer/react-rough-notation",
-    "remix": "^1.2.2",
     "roughjs": "^4.5.2"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^2.2.2",
-    "@remix-run/dev": "^1.2.2",
-    "@types/react": "^17.0.24",
-    "@types/react-dom": "^17.0.9",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.12.1",
-    "cross-env": "^7.0.3",
+    "@vitejs/plugin-react": "^4.2.0",
     "eslint": "^8.10.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^16.1.0",
@@ -42,14 +32,14 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.4",
-    "miniflare": "^2.1.0",
-    "npm-run-all": "^4.1.5",
+    "patch-package": "^8.0.1",
     "prettier": "^2.5.1",
-    "typescript": "^4.5.5",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
     "wrangler": "^3.22.1"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
