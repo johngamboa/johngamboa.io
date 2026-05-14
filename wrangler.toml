@@ -1,18 +1,4 @@
 name = "www"
-type = "javascript"
-compatibility_date = "2022-02-27"
+compatibility_date = "2024-01-01"
 
-zone_id = ""
-account_id = ""
-route = ""
-workers_dev = true
-
-[site]
-bucket = "./public"
-entry-point = "."
-
-[build]
-command = "npm run build"
-
-[build.upload]
-format="service-worker"
+[pages]
