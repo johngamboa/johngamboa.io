@@ -13,7 +13,7 @@ function Description() {
       strokeWidth={STROKE_WIDTH}
     >
       <b style={{ color: colors.text }}>
-        mission software engineer @ anduril industries
+        manager, software engineering @ anduril industries
       </b>
     </RoughNotation>
   );
